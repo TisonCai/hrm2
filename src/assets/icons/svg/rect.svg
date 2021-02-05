@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>矩形</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页（1920）" transform="translate(-24.000000, -320.000000)">
+            <rect fill="#EDEFF2" x="0" y="0" width="1920" height="919"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="0" y="64" width="224" height="907"></rect>
+            <g id="1导航框架/左侧导航/展开/1一级标题" transform="translate(0.000000, 304.000000)">
+                <rect id="矩形" x="0" y="0" width="224" height="48"></rect>
+                <rect id="矩形" x="184" y="16" width="16" height="16"></rect>
+                <g id="箭头" stroke-width="1" fill-rule="evenodd" transform="translate(189.000000, 19.000000)" fill="#80848F">
+                    <path d="M0.292893219,8.29289322 C-0.0976310729,8.68341751 -0.0976310729,9.31658249 0.292893219,9.70710678 C0.683417511,10.0976311 1.31658249,10.0976311 1.70710678,9.70710678 L5.70710678,5.70710678 C6.09763107,5.31658249 6.09763107,4.68341751 5.70710678,4.29289322 L1.70710678,0.292893219 C1.31658249,-0.0976310729 0.683417511,-0.0976310729 0.292893219,0.292893219 C-0.0976310729,0.683417511 -0.0976310729,1.31658249 0.292893219,1.70710678 L3.58578644,5 L0.292893219,8.29289322 Z" id="路径-4" fill-rule="nonzero"></path>
+                </g>
+                <g id="ICON" stroke-width="1" fill-rule="evenodd" transform="translate(24.000000, 16.000000)">
+                    <g id="icon" transform="translate(1.000000, 1.000000)" stroke="#80848F">
+                        <rect id="矩形" x="0.5" y="0.5" width="5" height="5" rx="1"></rect>
+                        <rect id="矩形" x="0.5" y="8.5" width="5" height="5" rx="1"></rect>
+                        <rect id="矩形" x="8.5" y="0.5" width="5" height="5" rx="1"></rect>
+                        <rect id="矩形" x="8.5" y="8.5" width="5" height="5" rx="1"></rect>
+                    </g>
+                    <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                </g>
+                <text id="一级标题" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="16" fill="#14161A">
+                    <tspan x="48" y="31">实验管理</tspan>
+                </text>
+            </g>
+            <g id="1导航框架/左侧导航/展开/2二级标题复制-4" transform="translate(0.000000, 304.000000)">
+                <rect id="矩形" x="0" y="0" width="224" height="48"></rect>
+                <g id="ICON" transform="translate(24.000000, 16.000000)">
+                    <g id="icon" transform="translate(1.000000, 1.000000)" stroke="#80848F">
+                        <rect id="矩形" x="0.5" y="0.5" width="5" height="5" rx="1"></rect>
+                        <rect id="矩形" x="0.5" y="8.5" width="5" height="5" rx="1"></rect>
+                        <rect id="矩形" x="8.5" y="0.5" width="5" height="5" rx="1"></rect>
+                        <rect id="矩形" x="8.5" y="8.5" width="5" height="5" rx="1"></rect>
+                    </g>
+                    <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

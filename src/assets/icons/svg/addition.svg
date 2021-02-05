@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关联课程" transform="translate(-468.000000, -629.000000)">
+            <g id="编组-16备份-5" transform="translate(468.000000, 629.000000)">
+                <g id="编组-15" fill="#D8D8D8">
+                    <rect id="矩形" x="0" y="10.5882353" width="24" height="4"></rect>
+                    <polygon id="矩形备份-9" transform="translate(12.000000, 11.882353) scale(-1, -1) rotate(90.000000) translate(-12.000000, -11.882353) " points="0.705882353 9.88235294 23.2941176 9.88235294 23.2941176 13.8823529 0.705882353 13.8823529"></polygon>
+                </g>
+                <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

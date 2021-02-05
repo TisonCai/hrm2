@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="136px" viewBox="0 0 360 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#E369E9" offset="0%"></stop>
+            <stop stop-color="#8E64F7" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="360" height="136" rx="5"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="平台态势备份" transform="translate(-240.000000, -153.000000)">
+            <g id="编组" transform="translate(240.000000, 153.000000)">
+                <g id="路径-3">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <path d="M0,106.0375 C49.2578946,28.5458333 103.032841,5.95 161.32484,38.25 C219.616838,70.55 281.52236,90.1 347.041404,96.9 L360,96.9 L365.915023,140.25 L-10,140.25 L0,106.0375 Z" fill="url(#linearGradient-4)" mask="url(#mask-3)"></path>
+                </g>
+                <rect id="矩形" x="0" y="0" width="360" height="136"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
