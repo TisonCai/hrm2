@@ -92,7 +92,7 @@ module.exports = {
         .loader('style-resources-loader')
         .options({
           patterns: [
-            resolve('src/assets/styles/*.scss')
+            resolve('src/assets/styles/global-variables/*.scss')
           ]
         }).end()
     })

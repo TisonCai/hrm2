@@ -6,12 +6,12 @@
     <template v-if="isSingleMenu">
       <el-tooltip
         :disabled="!collapse"
-        :content="onlyOneChild.title"
+        :content="onlyOneChild.meta.title"
         effect="dark"
         placement="right"
       >
         <app-link
-          v-if="!!onlyOneChild"
+          v-if="onlyOneChild.meta"
           :to="resolvePath(onlyOneChild.path)"
         >
           <el-menu-item
@@ -19,10 +19,10 @@
             :class="{ 'is-select': activeMenu == resolvePath(onlyOneChild.path)}"
           >
             <item
-              :icon="onlyOneChild.icon||(item && item.icon)"
-              :title="onlyOneChild.title"
-              :num="onlyOneChild.num"
-              :count="onlyOneChild.count"
+              :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)"
+              :title="onlyOneChild.meta.title"
+              :num="onlyOneChild.meta.num"
+              :count="onlyOneChild.meta.count"
               :collapse="collapse"
             />
           </el-menu-item>
@@ -38,10 +38,10 @@
     >
       <template slot="title">
         <item
-          v-if="!!item"
-          :icon="item && item.icon"
-          :title="item.title"
-          :num="item.num"
+          v-if="item.meta"
+          :icon="item.meta && item.meta.icon"
+          :title="item.meta.title"
+          :num="item.meta.num"
         />
       </template>
       <sidebar-item
@@ -56,7 +56,6 @@
     </el-submenu>
   </div>
 </template>
-
 <script>
 import path from 'path'
 import { isExternal } from '@/utils/validate'
@@ -98,7 +97,6 @@ export default {
       if (!item) return false
 
       const isSingleMenu = this.hasOneShowingChild(item.children, item) && (!onlyOneChild.children || onlyOneChild.noShowingChildren) && !item.alwaysShow
-      console.log('isSingleMenu', isSingleMenu)
       return isSingleMenu
     }
   },
@@ -144,17 +142,22 @@ export default {
 @import './variables.scss';
 
 .menu-wrapper {
-  /deep/ .el-submenu__title {
+  ::v-deep .el-submenu__title {
     height: auto;
     line-height: normal;
   }
 
-  /deep/ .el-submenu.is-active {
+  ::v-deep .el-submenu.is-active {
     .el-submenu__title {
       span,
       i:first-child {
         color: white;
       }
+    }
+    .el-menu-item {
+      padding-left: 40px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 21, 41);
     }
   }
 }
@@ -176,7 +179,7 @@ export default {
   .menu-item-content {
     background-color: #2362fb !important;
     color: white !important;
-    /deep/ i {
+    ::v-deep i {
       color: white !important;
     }
   }
@@ -186,7 +189,7 @@ export default {
   .menu-item-content {
     background-color: rgba($color: #fff, $alpha: 0.1);
     color: white;
-    /deep/ i {
+    ::v-deep i {
       color: white !important;
     }
   }

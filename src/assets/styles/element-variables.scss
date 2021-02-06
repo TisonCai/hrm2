@@ -1,31 +1,46 @@
-/**
-* I think element-ui's default theme color is too light for long-term use.
-* So I modified the default color and you can modify it to your liking.
-**/
+/* 改变主题色变量 */
+$--color-primary: #2362FB;
 
-/* theme color */
-$--color-primary: #1890ff;
-$--color-success: #13ce66;
-$--color-warning: #ffba00;
-$--color-danger: #ff4949;
-// $--color-info: #1E1E1E;
+/** border */
+$--border-color-base: #e6e6e6;
+$--border-radius-base: 4px;
+$--font-size-base: 13px;
 
-$--button-font-weight: 400;
+$--color-text-primary: #333;
+$--color-text-regular: #666;
+$--color-text-secondary: #999;
+// $--color-text-placeholder: #c0c4cc;
 
-// $--color-text-regular: #1f2d3d;
+/** input */
+// $--input-border-radius: 3px;
+$--input-height: 34px;
+$--input-border-radius:3px;
 
-$--border-color-light: #dfe4ed;
-$--border-color-lighter: #e6ebf5;
+/** button */
+$--button-padding-vertical: 8px;
+$--button-padding-horizontal: 12px;
+$--button-font-size: 13px;
 
-$--table-border:1px solid#dfe6ec;
+/* Radio
+-------------------------- */
+$--radio-font-size: 13px;
+$--radio-checked-text-color: $--color-text-regular;
+$--select-font-size: 12px;
 
-/* icon font path, required */
+/* Checkbox
+-------------------------- */
+$--checkbox-font-size: 13px;
+$--checkbox-checked-text-color: $--color-text-regular;
+
+/* Avatar
+-------------------------- */
+$--avatar-background-color: $--color-primary;
+
+/* Badge
+-------------------------- */
+$--badge-background-color: #FF6161;
+
+/* 改变 icon 字体路径变量，必需 */
 $--font-path: '~element-ui/lib/theme-chalk/fonts';
 
 @import "~element-ui/packages/theme-chalk/src/index";
-
-// the :export directive is the magic sauce for webpack
-// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
-:export {
-  theme: $--color-primary;
-}

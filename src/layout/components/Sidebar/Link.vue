@@ -16,16 +16,6 @@ export default {
       required: true
     }
   },
-  watch: {
-    to: {
-      handler(val) {
-        if (val) {
-          console.log('app-link to path:', val)
-        }
-      },
-      immediate: true
-    }
-  },
   methods: {
     linkProps(url) {
       if (isExternal(url)) {

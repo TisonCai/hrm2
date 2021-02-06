@@ -14,28 +14,28 @@ export const constantRoutes = [
     path: '/okr',
     component: Layout,
     redirect: '/okr/okr1',
-    title: 'OKR1',
-    icon: 'customer-solid',
     children: [
       {
         path: 'okr1',
         component: () => import('@/views/okr/okr1.vue'),
-        title: '客户总量分析 okr1',
-        icon: 'customer-solid'
+        meta: {
+          title: 'OKR1',
+          icon: 'customer-solid'
+        }
       }
     ]
   },
   {
     path: '/okr',
     component: Layout,
-    title: 'OKR2',
-    icon: 'customer-solid',
     children: [
       {
         path: 'okr2',
         component: () => import('@/views/okr/okr2.vue'),
-        title: '客户总量分析 okr2',
-        icon: 'customer-solid'
+        meta: {
+          title: 'OKR2',
+          icon: 'customer-solid'
+        }
       }
     ]
   },
@@ -43,20 +43,26 @@ export const constantRoutes = [
     path: '/okr',
     component: Layout,
     alwaysShow: true,
-    icon: 'customer-solid',
-    title: 'OKR2',
+    meta: {
+      title: 'OKR3-4',
+      icon: 'customer-solid'
+    },
     children: [
       {
         path: 'okr3',
         component: () => import('@/views/okr/okr3.vue'),
-        title: '客户总量分析 okr3',
-        icon: 'customer-solid'
+        meta: {
+          title: 'OKR3',
+          icon: 'customer-solid'
+        }
       },
       {
         path: 'okr4',
         component: () => import('@/views/okr/okr4.vue'),
-        title: '客户总量分析 okr4',
-        icon: 'customer-solid'
+        meta: {
+          title: 'OKR4',
+          icon: 'customer-solid'
+        }
       }
     ]
   },

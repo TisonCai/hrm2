@@ -27,7 +27,7 @@
       </el-menu>
     </el-scrollbar>
     <slot name="bottom" />
-    <!-- <div
+    <div
       :style="{ 'background-color':variables.menuBg }"
       class="sidebar-bottom"
     >
@@ -37,12 +37,12 @@
           :style="{ 'right': buttonCollapse ? '3px' : '0' }"
           :class="{ 'is-close': collapse }"
           class="collapse-button"
-          src="@/assets/img/collapse_white.png"
+          src="@/assets/image/collapse_white.png"
           alt=""
           @click="toggleSideBarClick"
         >
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -84,25 +84,26 @@ export default {
     }
   },
   computed: {
-    collapse() { return false },
-    // ...mapGetters(['collapse']),
+    ...mapGetters(['collapse']),
     activeMenu() {
       const route = this.$route
-      const { meta, path, params } = route
-
-      // let title = this.WKConfig.companyName
-      let title = ''
-      if (meta.title) {
-        title += ' - ' + meta.title
-      } else if (params && params.title) {
-        title += ' - ' + params.title
-      }
-      document.title = title
-      // if set path, the sidebar will highlight the path you set
-      if (meta.activeMenu) {
-        return meta.activeMenu
-      }
+      const { path } = route
       return path
+      // 修改标签栏显示title的逻辑
+      // const { meta, path, params } = route
+      // let title = this.WKConfig.companyName
+      // let title = ''
+      // if (meta.title) {
+      //   title += ' - ' + meta.title
+      // } else if (params && params.title) {
+      //   title += ' - ' + params.title
+      // }
+      // document.title = title
+
+      // if set path, the sidebar will highlight the path you set
+      // if (meta.activeMenu) {
+      //   return meta.activeMenu
+      // }
     },
     variables() {
       return variables
@@ -120,8 +121,6 @@ export default {
     }
   },
   mounted() {
-    console.log('sidebar items', this.items)
-
     this.buttonCollapse = this.collapse
   },
   methods: {
